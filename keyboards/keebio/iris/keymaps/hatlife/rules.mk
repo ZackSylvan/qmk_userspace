@@ -1,0 +1,2 @@
+VIA_ENABLE = no
+ENCODER_ENABLE = no
