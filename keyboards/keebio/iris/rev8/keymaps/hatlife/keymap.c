@@ -4,9 +4,11 @@
 #include "hatlife.h"
 #include "keycodes.h"
 
-// Rev7 LED indices: LSFT=23, SFT_ENT=57, WASD={9,13,14,15}
-const int kb_shift_idxs[KB_SHIFT_IDX_COUNT] = { 23, 57 };
-const int kb_wasd_idxs[KB_WASD_IDX_COUNT] = { 9, 13, 14, 15 };
+// Only master side can individually control LEDs
+// Rev8 LED indices: LSFT=28, SFT_ENT=62, WASD={12,16,17,18}
+// Rev8 has underlight LEDs interspersed, shifting all indices relative to Rev7
+const int kb_shift_idxs[KB_SHIFT_IDX_COUNT] = { 28, 62 };
+const int kb_wasd_idxs[KB_WASD_IDX_COUNT] = { 12, 16, 17, 18 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -80,4 +82,3 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
   )
 };
-
