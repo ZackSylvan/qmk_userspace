@@ -6,7 +6,7 @@ static bool     sft_ent_pending = false;
 static uint32_t sft_ent_timer   = 0;
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    if (sft_ent_pending && timer_elapsed32(sft_ent_timer) > TAPPING_TERM) {
+    if (sft_ent_pending && timer_elapsed32(sft_ent_timer) > 300) {
         sft_ent_pending = false;
     }
 

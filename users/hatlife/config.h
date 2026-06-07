@@ -4,13 +4,13 @@
 #define HOLD_ON_OTHER_KEY_PRESS
 #define NO_USB_STARTUP_CHECK
 #define QUICK_TAP_TERM 0
-#define TAPPING_TERM 300
 
 #define _BL 0
 #define _LWR 1
 #define _RSE 2
 #define _ADJ 3
 #define _GME 4
+#define _MSE 5
 
 #define CTL_ESC LCTL_T(KC_ESC)
 #define CTLTAB C(KC_TAB)
